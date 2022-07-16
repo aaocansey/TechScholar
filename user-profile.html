@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light pt-3">
+    <div class="container">
+        <!-- Brand Name -->
+        <div class="brand-logo"><a class="navbar-brand logo" href="index.html"> <span class="text-primary">TECHSCHOLAR</span></a><div class="pink-box-logo"></div></div>
+
+        <!-- Toggle Button Icon-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Toggler class content-->
+        <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Board</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Meeet Our Scholars</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">History</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Financial Aid
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Scholarships</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Bursaries</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href=""><button class="btn btn-sm apply-btn" type="button">Apply</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="login.html"> <button class=" btn btn-sm btn-primary login-btn">Login</button></a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-3">
+    <div class="row app-head">
+        <h1 class="display-3 fw-bold welcome">Welcome <span class="fw-normal fs-5 scholar">Scholar</span></h1>
+    </div>
+    <div class="row mt-5">
+        <div class="col-3 side-links">
+            <div class="mb-3 "><a href="application.html" >Dashboard</a></div>
+            <div class="mb-3 "><a href="">New Application</a></div>
+            <div class="mb-3 "><a href="">Current Scholarship</a></div>
+            <div class="mb-3 "><a href="user-profile.html">User Profile</a></div>
+            <div class="mb-3 "><a href="">Aptitude Test</a></div>
+            <div class="mb-3 "><a href=""> Notifications0</a></div>
+            <div class="mb-3 "><a href="">Change Password</a></div>
+        </div>
+        <div class="col">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Username</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">State</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
