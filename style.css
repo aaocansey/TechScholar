@@ -200,10 +200,14 @@ body, .home{
  /* Application.html CSS codes*/
 
 .profile-image{
-    height: 90px;
-    width: 90px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     background-color: darkgray;
+    background-image: url(images/noavatar92.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
 }
 
 .form-i{
@@ -218,8 +222,62 @@ body, .home{
     height: 2rem;
 }
 
-.menu-panel{
+.side-menu-panel{
     height: 100%;
-    width: 50%;
+    width: 100%;
     background-color: #0d6efd;
+    border-radius: 10px;
 }
+.side-menu-panel > div > img{
+    width: 50%;
+}
+
+.apply-icon{
+    width: 150px!important;
+}
+
+.exit-icon{
+    margin-top: 150px;
+}
+
+
+ .navbtn-toggle{
+  background-color: lightgrey;
+  border-color: transparent;
+}
+
+.clock{
+    max-width: fit-content;
+    color: #fff;
+    background-color: rgba(236, 5, 102, 0.7);
+    padding: 7px;
+    border-radius: 10px 10px 0;
+}
+
+.dashbord-container{
+    border-radius: 10px;
+}
+
+.date-container{
+    border: 2px solid #0d6efd;
+    border-radius: 10px;
+    color: #0d6efd;
+}
+
+.date-sub-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-date{
+    color: #fc98d6;
+}
+
+.dashbord-btn{
+    border-radius: 10px;
+    background: rgb(253, 23, 119);
+}
+
+/* .dashbord-btn:active{
+    background-color: rgb(253, 23, 119);
+} */
