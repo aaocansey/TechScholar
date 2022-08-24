@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechScholar</title>
+    <title>TechScholar-new application</title>
     <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
@@ -32,147 +32,202 @@
         </nav>
         <div class="container">
             <div class="row">
-                <div class="col-1 ">
-                    <div class="side-menu-panel d-flex flex-column justify-content-center">
-                        <div class="d-flex mb-5 ">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                            aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class=""><img class="img-fluid" src="images/ui-g-burger_menu-512.png" alt="" srcset=""></span>
-                            </button>
-                        </div>
-                        
-                        <div class="d-flex mb-5">
-                            <a class="btn" href="application.html"><img class="img-fluid" src="images/R (5).png" alt=""></a>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center mb-5">
-                            <a class="btn dashbord-btn mx-1" href="new_application.html"><img class="img-fluid apply-icon" src="images/application-form-icon-vector-172PNG.PNG" alt=""></a>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center mb-5">
-                            <a class="btn" href=""><img class="apply-icon" src="images/application-form-icon-vector-17255344.PNG" alt=""></a>
-                        </div>
-                        <div class="d-flex mb-5 g-5">
-                            <a class="btn" href=""><img class="img-fluid " src="images/R1.PNG" alt=""></a>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center mb-5 exit-icon">
-                            <a class="btn" href=""><img class="img-fluid" src="images/Untitled.png" alt=""></a>
-                        </div>
+              <div class="col-1 ">
+                <div class="side-menu-panel d-flex flex-column justify-content-center">
+                  <div class="d-flex mb-5 ">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                      aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class=""><img class="img-fluid" src="images/ui-g-burger_menu-512.png" alt="" srcset=""></span>
+                      </button>
+                  </div>
+                  
+                  <div class="d-flex mb-5">
+                      <a class="btn" href="application.html"><img class="img-fluid" src="images/R (5).png" alt=""></a>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center mb-5">
+                      <a class="btn dashbord-btn mx-1" href="new_application.html"><img class="img-fluid apply-icon" src="images/application-form-icon-vector-172PNG.PNG" alt=""></a>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center mb-5">
+                      <a class="btn" href="currentAppInfo.html"><img class="img-fluid apply-icon" src="images/application-form-icon-vector-17255344.PNG" alt=""></a>
+                  </div>
+                  <div class="d-flex mb-5 g-5">
+                      <a class="btn" href=""><img class="img-fluid " src="images/R1.PNG" alt=""></a>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center mb-5 exit-icon">
+                      <a class="btn" href=""><img class="img-fluid" src="images/Untitled.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col form-box">
+                <form class="fs-4" data-bs-target=".side-menu-panel">
+                  <div class="col-11 progressbar">
+                    <div class="progress" id="progress"></div>
+                    <div class="progress-step progress-step-active" data-title="Intro"></div>
+                    <div class="progress-step" data-title=""></div>
+                    <div class="progress-step" data-title=""></div>
+                    <div class="progress-step" data-title=""></div>
+                  </div>
+
+                  <!--First Form Step-->
+                  <div class="col-11 flex-wrap gap-4 form-step form-step-active">
+                    <!--Name Section-->
+                    <div class="col-md-1">
+                      <label for="inputTitle" class="form-label">Title</label>
+                      <select id="inputTitle" class="form-select">
+                        <option selected>Mr.</option>
+                        <option>Mrs.</option>
+                        <option>Miss</option>
+                      </select>
                     </div>
-                </div>
-                <div class="col">
-                    <form class="d-flex flex-wrap fs-4 gap-4" data-bs-target=".side-menu-panel">
-                        <div class="col-md-1 me-2">
-                          <label for="inputEmail4" class="form-label">Title</label>
-                          <select id="inputState" class="form-select">
-                            <option selected>Mr.</option>
-                            <option>Mrs.</option>
-                            <option>Miss</option>
-                          </select>
-                        </div>
-                        <div class="col-md-3 me-2">
-                          <label for="inputPassword4" class="form-label">First Name</label>
-                          <input type="password" class="form-control" id="inputPassword4">
-                        </div>
-                        <div class="col-md-3 me-2">
-                          <label for="inputAddress" class="form-label">Middle Name</label>
-                          <input type="text" class="form-control" id="inputAddress">
-                        </div>
-                        <div class="col-md-4 mb-5">
-                          <label for="inputAddress2" class="form-label">Last Name</label>
-                          <input type="text" class="form-control" id="inputAddress2">
-                        </div>
-                        <div class="col-md-2 me-2 mb-5">
-                          <label for="inputCity" class="form-label">Gender</label>
-                          <select id="inputState" class="form-select">
-                            <option selected>Male</option>
-                            <option>Female</option>
-                          </select>
-                        </div>
-                        <div class="col-md-2 me-2">
-                          <label for="inputState" class="form-label">Date of Birth</label>
-                          <input type="date" class="form-control" id="inputAddress2">
-                        </div>
-                        <div class="col-md-4 me-2">
-                          <label for="inputZip" class="form-label">Email</label>
-                          <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        <div class="col-md-3">
-                            <label for="inputZip" class="form-label">Contact</label>
-                            <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        <div class="col-md-5 me-2 mb-5">
-                            <label for="inputState" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="inputAddress2">
-                        </div>
-                        <div class="col-md-3 me-2">
-                        <label for="inputZip" class="form-label">Region of Residence</label>
-                        <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        <div class="col-md-3">
-                            <label for="inputZip" class="form-label">Contact</label>
-                            <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        <div class="col-md-3 me-2 mb-5">
-                            <label for="inputState" class="form-label">Religion</label>
-                            <input type="text" class="form-control" id="inputAddress2">
-                        </div>
-                        <div class="col-md-6 me-2">
-                        <label for="inputZip" class="form-label">Select Denomination if you're a Christian</label>
-                        <input type="text" class="form-control" id="inputZip">
-                        </div>
-                        <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Marital Status</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Single</option>
-                            <option>Married</option>
-                            <option>Divorced</option>
+                    <div class="col-md-3">
+                      <label for="inputFirstName" class="form-label">First Name</label>
+                      <input type="password" class="form-control" id="inputFirstName">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="inputMiddleName" class="form-label">Middle Name</label>
+                      <input type="text" class="form-control" id="inputMiddleName">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputLastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="inputLastName">
+                    </div>
+                    <!--End Name-->
+                    <!--Demographics-->
+                    <div class="col-md-2">
+                      <label for="inputGender" class="form-label">Gender</label>
+                      <select id="inputGender" class="form-select">
+                        <option selected>Male</option>
+                        <option>Female</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputDoB" class="form-label">Date of Birth</label>
+                      <input type="date" class="form-control" id="inputDoB">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputEmail" class="form-label">Email</label>
+                      <input type="text" class="form-control" id="inputEmail">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputContact" class="form-label">Contact</label>
+                        <input type="text" class="form-control" id="inputContact">
+                    </div>
+                    <!--End Demographics-->
+                     <!--Location-->
+                     <div class="col-md-5">
+                      <label for="inputAddress" class="form-label">Address</label>
+                      <input type="address" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="inputRegion" class="form-label">Region of Residence</label>
+                      <input type="text" class="form-control" id="inputRegion">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="inputDigitAddress" class="form-label">Digital Address</label>
+                      <input type="text" class="form-control" id="inputDigitAddress">
+                    </div>
+                    <!--End Location-->
+                    <!--Religious Affiliation-->
+                    <div class="col-md-3">
+                        <label for="inputReligion" class="form-label">Religion</label>
+                        <select id="inputReligion" class="form-select">
+                          <option selected>Christianity</option>
+                          <option>Islam</option>
+                          <option>African Religion</option>
+                          <option value="">Other</option>
                         </select>
-                        </div>
-                          <div class="col-md-6 me-2">
-                            <label for="inputZip" class="form-label">Programme</label>
-                            <select id="inputState" class="form-select">
-                                <option selected>BSc. Biology</option>
-                                <option>BSc. Statistics</option>
-                                <option>BSc. Mathematics</option>
-                            </select>
-                          </div>
-                          <div class="col-md-1 me-2">
-                            <label for="inputZip" class="form-label">Year</label>
-                            <select id="inputState" class="form-select">
-                                <option selected>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                                <option value="">6</option>
-                            </select>
-                          </div>
-                          <div class="col-md-4 mb-5">
-                            <label for="inputZip" class="form-label">College</label>
-                            <select id="inputState" class="form-select">
-                                <option selected>COHSS</option>
-                                <option>COE</option>
-                                <option>CoS</option>
-                            </select>
-                          </div>
-                        <!-- <div class="col-12">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                              Check me out
-                            </label>
-                          </div>
-                        </div> -->
-                        <div class="col-11 d-flex justify-content-end pt-5">
-                          <button type="submit" class="btn btn-primary">Save and Continue</button>
-                          <a type="submit" href="login.html" class="btn btn-danger ms-2">Save and Exit</a>
-                        </div>
-                    </form>
-                </div>
-                   
+                    </div>
+                    <div class="col-md-6">
+                    <label for="inputDenom" class="form-label">Enter your denomination if you're a Christian</label>
+                    <input type="text" class="form-control" id="inputDenom">
+                    </div>
+                    <div class="col-md-2">
+                    <label for="inputMaritalStatus" class="form-label">Marital Status</label>
+                    <select id="inputMaritalStatus" class="form-select">
+                        <option selected>Single</option>
+                        <option>Married</option>
+                        <option>Divorced</option>
+                    </select>
+                    </div>
+                    <!--End Religion-->
+                    <!--Buttons-->
+                    <div class="col-11">
+                      <a class="btn btn-primary btn-next" href="#">Save and Continue</a>
+                      <a type="submit" href="login.html" class="btn btn-exit ms-2">Save and Exit</a>
+                    </div>
+                    <!--End Buttons-->
+                  </div>
+
+                  <!--New Form Step-->
+                  <div class="col-11 flex-wrap gap-4 form-step" id="step2">
+                    <div class="col-md-6 mb-5">
+                      <label for="inputProg" class="form-label">Programme</label>
+                      <select id="inputProg" class="form-select">
+                        <option selected>BSc. Biology</option>
+                        <option>BSc. Statistics</option>
+                        <option>BSc. Mathematics</option>
+                      </select>
+                    </div>
+                    <div class="col-md-5">
+                      <label for="inputDept" class="form-label">Department</label>
+                      <input type="password" class="form-control" id="inputDept">
+                    </div>               
+                    <div class="col-md-6">
+                      <label for="inputFaculty" class="form-label">Faculty</label>
+                      <input type="text" class="form-control" id="inputFaculty">
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <label for="inputCollege" class="form-label">College</label>
+                        <select id="inputCollege" class="form-select">
+                          <option selected>COHSS</option>
+                          <option>COE</option>
+                          <option>CoS</option>
+                        </select>
+                      </div>
+                    <div class="col-md-2">
+                        <label for="inputYear" class="form-label">Year</label>
+                        <select id="inputYear" class="form-select">
+                          <option selected>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option value="">4</option>
+                          <option value="">5</option>
+                          <option value="">6</option>
+                        </select>
+                    </div>                   
+                    <div class="col-md-4 mb-5">
+                      <label for="inputStdId" class="form-label">Student Id</label>
+                      <input type="number" class="form-control" id="inputStdId">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="inputIdxNum" class="form-label">Index Number</label>
+                      <input type="number" class="form-control" id="inputIdxNum">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputMoA" class="form-label">Mode of Admission</label>
+                        <select id="inputMoA" class="form-select">
+                          <option selected>Regular</option>
+                          <option>Fee-paying</option>
+                          <option>Less-Endowed</option>
+                        </select>
+                    </div>
+                    <div class="col-md-5 mb-5">
+                      <label for="inputLocation" class="form-label">Where do you stay when in school?</label>
+                      <input type="address" class="form-control" id="inputLocation">
+                    </div>
+                    <div class="col-11 d-flex justify-content-end pt-5 btnn-group">
+                      <a href="#" class="btn btn-prev me-2">Go Back</a>
+                      <a href="#" class="btn btn-primary btn-next">Save and Continue</a>
+                      <a type="submit" href="login.html" class="btn btn-exit ms-2">Save and Exit</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              
             </div>
-        </div>       
+        </div> 
+    <script type="text/javascript" src="my.js"></script>      
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/myjs.js"></script> 
 </body>
 </html>

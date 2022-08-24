@@ -45,7 +45,7 @@
 }
 .pink-box-logo{
     background-color: rgb(236, 5, 102);
-    width: 56%;
+    width: 45%;
     height: 0.5rem;
     margin-left: 3rem;
     margin-top: -0.4rem;
@@ -57,7 +57,7 @@
 }
 .pink-box{
     background-color: rgb(236, 5, 102);
-    width: 50%;
+    width: 40%;
     height: 0.5rem;
     /* margin-bottom: 1rem; */
     margin-top: 1.7rem;
@@ -233,7 +233,7 @@ body, .home{
 }
 
 .apply-icon{
-    width: 150px!important;
+    width: 100px!important;
 }
 
 .exit-icon{
@@ -281,3 +281,90 @@ body, .home{
 /* .dashbord-btn:active{
     background-color: rgb(253, 23, 119);
 } */
+
+.index-btn{
+    background-color: #fff;
+    border: none;
+}
+
+
+
+/* .form-box{
+    
+} */
+
+.progressbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 4rem;
+    counter-reset: step;
+}
+
+.progressbar::before, .progress{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: rgb(220, 223, 224);
+    z-index: -1;
+}
+
+.progress{
+    background-color: blue;
+    width: 0%;
+    transition: 0.3s;
+}
+
+
+.progress-step{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: rgb(220, 223, 224);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-step::before{
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step::after{
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    font-size: 0.75em;
+}
+
+.progress-step-active{
+    background-color: blue;
+    color: #fff;
+}
+
+
+.form-step{
+    display: none;
+}
+
+.form-step-active{
+    display: flex;
+}
+
+.btn-prev{
+    background-color: rgb(158, 3, 68);
+    color: white;
+}
+
+.btn-exit{
+    background-color: rgb(207, 4, 89);
+    color: white;
+}
+
+
+/* Current Application css */
+.App
